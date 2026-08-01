@@ -9,7 +9,7 @@
  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-### ✦ HTTP Security Header Analyzer & Grader ✦
+###  HTTP Security Header Analyzer & Grader 
 
 **One passive request. No exploitation. Posture, not proof.**
 
