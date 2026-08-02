@@ -49,9 +49,6 @@ PORTFOLIO = "https://linxploit.com/founder"
 
 requests.packages.urllib3.disable_warnings()  # noqa
 
-# --------------------------------------------------------------------------- #
-#  UI toolkit (shared visual language with the rest of the Linxploit X-Suite)
-# --------------------------------------------------------------------------- #
 
 GRADIENT = [
     "\033[38;5;46m",   # green
@@ -206,10 +203,6 @@ def grade_bar(score: int, width: int = 30) -> str:
     color = C_OK if score >= 80 else C_INFO if score >= 60 else C_WARN if score >= 40 else C_BAD
     return f"{color}[{bar_char * filled}{empty_char * (width - filled)}]{RESET} {color}{score:>3}/100{RESET}"
 
-
-# --------------------------------------------------------------------------- #
-#  Header knowledge base
-# --------------------------------------------------------------------------- #
 
 @dataclass
 class HeaderCheck:
@@ -385,9 +378,6 @@ def grade_from_score(score: int) -> str:
     return "F"
 
 
-# --------------------------------------------------------------------------- #
-#  Core scan
-# --------------------------------------------------------------------------- #
 
 @dataclass
 class ScanResult:
@@ -464,10 +454,6 @@ def scan_target(
 
     return result
 
-
-# --------------------------------------------------------------------------- #
-#  Reporting
-# --------------------------------------------------------------------------- #
 
 def print_result(result: ScanResult, verbose: bool):
     if result.error:
@@ -561,10 +547,6 @@ def save_csv(results: List[ScanResult], path: str):
                 "grade": r.grade, "error": r.error,
             })
 
-
-# --------------------------------------------------------------------------- #
-#  CLI
-# --------------------------------------------------------------------------- #
 
 def parse_header_list(items: Optional[List[str]]) -> dict:
     headers = {}
