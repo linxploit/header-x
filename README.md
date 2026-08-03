@@ -89,8 +89,8 @@ v2.0.0 · One passive request. No exploitation. Posture, not proof.
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/linxploit/headerx.git
-cd headerx
+git clone https://github.com/linxploit/header-x.git
+cd header-x
 pip install -r requirements.txt
 ```
 
