@@ -18,6 +18,7 @@ DISCLAIMER:
     the response headers. It sends no attack payloads and modifies no
     server state. A low grade indicates hardening opportunities, not a
     confirmed exploitable vulnerability.
+    
     Only use this tool against targets you own or are explicitly
     authorized to assess.
 
